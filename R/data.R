@@ -19,16 +19,3 @@ NULL
 #' \describe{
 #'   \item{price}{price, in US dollars}
 #'   \item{carat}{weight of the diamond, in carats}
-
-
-#' @importFrom tibble tibble
-#'
-NULL
-
-#' All royal tweets further cleaned and tokenized by words
-#'
-#' @format A data frame with 18 variables: \code{word}, \code{favorited},
-#'   \code{favoriteCount}, \code{replyToSN}, \code{created},  \code{truncated},  \code{replyToSID},\code{id},\code{replyToUID},
-#'   \code{statusSource}, \code{screenName}, \code{retweetCount} (\code{isRetweet}, \code{retweeted}, \code{longitude}, \code{latitude}, \code{tweetID} and \code{retweet_from}
-#'
-"royalwords"
