@@ -1,0 +1,14 @@
+# Read into R all the .csv file and save each of them as an argument of a list
+# find all data at https://github.com/R-LadiesMelbourne/Follow-Me-Introduction-to-social-media-analysis-in-R/tree/master/Twitter/Twitter_Data
+
+all_tweets <- lapply(data,function(tweets){
+  data_tweets <- read_csv(tweets)
+  return(data_tweets)
+})
+
+# Combine the .csv file into a data.frame
+all_tweets <- do.call(rbind,all_tweets)
+head(all_tweets)[,c(2:5)]
+
+saveRDS(all_tweets,"Twitter_Data/rbind_raw_tweets.rds")
+
